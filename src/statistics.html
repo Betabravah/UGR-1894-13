@@ -2,54 +2,84 @@
 <html lang="en">
 <head>
     <title>Statistics</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav>
-        <a href=""><img src="images/logo.jpeg" width='60px' height='60px' alt="Full Heart Farm Logo"></a>
-        <a href="home.html">Home</a>
-        <a href="roosters.html">Roosters</a>
-        <a href="egg-production.html">Egg Production</a>
-        <a href="environment_friendly.html">Environment Friendly</a>
-        <a href="about.html">About Us</a>
-        <a href="contact-us.html">Contact Us</a>
+    <div class="menu-btn">
+        <img class=" menu__icon icon" src="images/menu.png"  alt="">
+    </div>
+    <nav class="nav nav--flex">
+        <img class="nav__logo" src="images/logo.png" width='60px' height='60px' alt="Full Heart Farm Logo"></a>
+        <ul class="nav__elem list list--flex list--center">
+            <li><a class="link link--unvisited" href="home.html">Home</a></li>
+            <li><a class="link link--unvisited link--current" href="roosters.html">Roosters</a></li>
+            <li><a class="link link--unvisited" href="egg-production.html">Egg Production</a></li>
+            <li><a class="link link--unvisited" href="environment_friendly.html">Environment Friendly</a></li>
+            <li><a class="link link--unvisited" href="about.html">About Us</a></li>
+            <li><a class="link link--unvisited" href="contact-us.html">Contact Us</a></li>
+        </ul>
     </nav>
 
-    <header>
+    <section class="container">
         <h1>Statistics</h1>
-    </header>
-
-    <div class="graphs">
-        <img src="images/monthwise-egg-production.png" alt="Month Wise Egg Production">
-    </div>
-    <div class="graphs">
-        <p>Eggs produced from Selective Breeding contributes to 76.9% of the total eggs produced.</p>
-        <img src="images/pie-chart.png" alt="Selective Breeding effect on Egg Production">
-    </div>
-    <div class="graphs">
-        <p>Laying Rate</p>
-        <img src="images/egg-production.png" width="65%" alt="Egg Production from 2000 to 2020">
-    </div>
-
     
-    <footer>
-        <div class="footer-1">
-            <a href="#"><img src="images/facebook.png" alt="facebook logo"></i></a>
-            <a href="#"><img src="images/twitter.png" alt="twitter logo"></i></a>
-            <a href="#"><img src="images/youtube.png" alt="youtube logo"></i></a>
-            <a href="#"><img src="images/instagram.png" alt="instagram logo"></i></a>
+        <div class="graph graph--grid">
+            <div class="graphs">
+                <p>Egg Production Over the monthes</p>
+                <img class="graph__image" src="images/monthwise-egg-production.png" alt="Month Wise Egg Production">
+            </div>
+            <div class="graphs">
+                <p>Eggs produced from Selective Breeding contributes to 76.9%.</p>
+                <img class="graph__image" src="images/pie-chart.png" alt="Selective Breeding effect on Egg Production">
+            </div>
+            <div class="graphs">
+                <p>Laying Rate</p>
+                <img class="graph__image" src="images/egg-production.png" width="65%" alt="Egg Production from 2000 to 2020">
+            </div>
+            <div class="graph__list">
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                </ul>
+            </div>
+        </div>
+        
+    </section>
+    
+    <footer class="footer">
+
+        <div class="footer__mini">
+            <ul class="list list--flex list--center">
+                <a href="#"><img class="icon icon--flex" src="images/facebook.png" alt="facebook logo"></i></a>
+                <a href="#"><img class="icon icon--flex" src="images/twitter.png" alt="twitter logo"></i></a>
+                <a href="#"><img class="icon icon--flex" src="images/youtube.png" alt="youtube logo"></i></a>
+                <a href="#"><img class="icon icon--flex" src="images/instagram.png" alt="instagram logo"></i></a>
+            </ul>
         </div>
            
-        <br>
-        <div class="main-footer">
-            <a href="home.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="contact-us.html">Contact</a></li>
-            <a href="#">Terms & Conditions</a>
-            <a href="#">Privacy Policy</a>
+        <div class="footer__main">
+            <div class="footer__link">
+                <ul class="list list--flex list--center">
+                    <li class="list__item"><a class="link link--unvisited" href="home.html">Home</a></li>
+                    <li class="list__item"><a class="link link--unvisited" href="about.html">About Us</a></li>
+                    <li class="list__item"><a class="link link--unvisited" href="contact-us.html">Contact</a></li>
+                    <li class="list__item"><a class="link link--unvisited" href="#">Terms & Conditions</a></li>
+                    <li class="list__item"><a class="link link--unvisited" href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
 
-            <br>
+        <div class="footer__copyright">
             &copy; Full Heart Farm 2022, All Rights Reserved
         </div>
+        
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>
