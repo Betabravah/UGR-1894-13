@@ -565,6 +565,10 @@ body {
         max-width: 30vw;
     }
 
+    .team__item{
+        display: none;
+    }
+
 
     .list--flex {
         font-size: 12px;

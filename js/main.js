@@ -17,17 +17,6 @@ function showSideMenu(e){
 document.querySelector(".submit").addEventListener
 ("click", validateForm)
 
-function showAlert(message) {
-    const div = document.createElement('div')
-    div.className = `alert`
-    div.appendChild(document.createTextNode(message))
-    const container = document.querySelector('.container')
-    const form = document.querySelector('#contact__form')
-    container.insertBefore(div, form)
-
-    // vanish in 3 seconds
-    setTimeout(() => document.querySelector('.alert').remove(), 3000)
-}
 
 function validateForm(e){
     e.preventDefault()
