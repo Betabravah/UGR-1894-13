@@ -1,3 +1,15 @@
+// side menu
+
+document.querySelector(".menu__icon").addEventListener
+("click", showSideMenu);
+
+
+function showSideMenu(e){
+    e.preventDefault()
+
+    document.querySelector(".nav__elem").classList.toggle("nav--show")
+    document.querySelector(".link--current").classList.remove("link--current")
+}
 
 
 // validate forms
@@ -7,12 +19,12 @@ document.querySelector(".submit").addEventListener
 
 function showAlert(message) {
     const div = document.createElement('div')
-    console.log('yes')
     div.className = `alert`
     div.appendChild(document.createTextNode(message))
     const container = document.querySelector('.container')
     const form = document.querySelector('#contact__form')
     container.insertBefore(div, form)
+
     // vanish in 3 seconds
     setTimeout(() => document.querySelector('.alert').remove(), 3000)
 }
@@ -28,9 +40,8 @@ function validateForm(e){
     if(firstName.length == 0 || lastName.length == 0 || email.length == 0 || message.length == 0){
 
         const div = document.createElement('div')
-        console.log('yes')
         div.className = 'alert'
-        div.appendChild(document.createTextNode("Please enter all required fields"))
+        div.appendChild(document.createTextNode("Please enter all required fields."))
         const container = document.querySelector('.contact__left')
         const form = document.querySelector('#contact__form')
         container.insertBefore(div, form)
@@ -40,23 +51,3 @@ function validateForm(e){
 }
 
 
-// side menu
-
-document.querySelector(".menu__icon").addEventListener
-("click", showSideMenu);
-
-document.querySelector(".showcase").addEventListener
-("click", hideSideMenu)
-
-
-function showSideMenu(e){
-    e.preventDefault()
-
-    document.querySelector(".nav__elem").classList.toggle("nav--show")
-    document.querySelector(".link--current").classList.remove("link--current")
-}
-
-function hideSideMenu(e){
-    e.preventDefault()
-    document.querySelector(".nav__elem").classList.remove("nav--show")
-}
