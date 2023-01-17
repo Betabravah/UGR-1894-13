@@ -656,6 +656,10 @@ body {
         flex-direction: column;
     }
 
+    #contact__form {
+        max-width: 70vw;
+    }
+
     .list--flex {
         font-size: 10px;
     }
