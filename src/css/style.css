@@ -249,6 +249,13 @@ body {
     color: #f8fbff;
     background: var(--primary-color);
     padding: 1.5rem;
+    display: flex;
+}
+
+.row {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
 }
 
 .container__heading {
